@@ -15,7 +15,7 @@ h1 {
 }
 
 #container {
-    width: 330px;
+    max-width: 330px;
     background: #f7f7f7;
     margin: 20px auto 0;
     padding: 30px;
@@ -30,22 +30,22 @@ h1 {
     padding: 7px;
     margin: 0;
     border: 1px solid #aaa;
+    box-sizing: border-box;
 }
 
 #textTodo {
-    width: 265px;
+    width: 80%;
     border-right: 0;
     border-radius: 3px 0 0 3px;
     box-shadow: inset 0px 0px 5px #aaa;
 }
 
 #addTodo {
-    width: 50px;
+    width: 20%;
     border-left: 0;
     border-radius: 0 3px 3px 0;
     background-color: #dd6ee6;
     color: white;
-    margin-left: -5px;
 }
 
 #container ul {
@@ -58,10 +58,12 @@ h1 {
     margin: 0 0 10px 0;
     display: flex;
     justify-content: space-between;
+    user-select: none;
 }
 
 .trashIcon {
     height: 18px;
+    margin-right: 15px;
 }
 
 .uncheckText .checkIcon {

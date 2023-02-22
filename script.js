@@ -1,8 +1,15 @@
-var todoNumber = 0;
+let todoNumber = 0;
 
 $('#addTodo').click(() => {
     addLi($('#textTodo').val());
     $('#textTodo').val('');
+});
+
+$(document).keypress((event) => {
+    if(event.keyCode === 13) {
+        addLi($('#textTodo').val());
+        $('#textTodo').val('');
+    }
 });
 
 function addLi (textLi) {
@@ -24,7 +31,11 @@ function addLi (textLi) {
                 }
             })
             $('#todoNumber${todoNumber} .trashIcon').click(() => {
-                $('#todoNumber${todoNumber}').remove();
+                if ($('#todoNumber${todoNumber}').attr('class') === 'uncheckText') {
+                    $('#todoNumber${todoNumber}').remove();
+                } else {
+                    $('#todoNumber${todoNumber}').attr('class', 'uncheckText');
+                }
             })
             </script>`
         )
