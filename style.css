@@ -1,0 +1,87 @@
+body {
+    background: #58e2c2;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+h1 {
+    color: #aaa;
+    text-align: center;
+    font-weight: 300;
+    font-size: 50px;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+#container {
+    width: 330px;
+    background: #f7f7f7;
+    margin: 20px auto 0;
+    padding: 30px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #aaa;
+}
+
+#textTodo, #addTodo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 7px;
+    margin: 0;
+    border: 1px solid #aaa;
+}
+
+#textTodo {
+    width: 265px;
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+    box-shadow: inset 0px 0px 5px #aaa;
+}
+
+#addTodo {
+    width: 50px;
+    border-left: 0;
+    border-radius: 0 3px 3px 0;
+    background-color: #dd6ee6;
+    color: white;
+    margin-left: -5px;
+}
+
+#container ul {
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+#container li {
+    list-style-type: none;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trashIcon {
+    height: 18px;
+}
+
+.uncheckText .checkIcon {
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    background-image: url("./icon/uncheck_icon.png");
+}
+
+.checkText .checkIcon {
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    background-image: url("./icon/check_icon.png");
+}
+
+.uncheckText {
+    color: #aaa;
+}
+
+.checkText {
+    color: #ccc;
+}
